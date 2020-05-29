@@ -15,7 +15,8 @@ body {
   background-position: center;
   background-size: cover;
   box-shadow: 9px 7px 20px 0px #2b2b2b;
-  transition: 0.9s;
+  transition: 0.5s;
+  margin-bottom: 50%;
 }
 
 .header_title {
