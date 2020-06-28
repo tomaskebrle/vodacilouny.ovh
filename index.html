@@ -1,84 +1,164 @@
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header" id="header">
-      <div class="header_title" id="header_title">
-        VODÁCI LOUNY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vodáci Louny|vodacilouny.ovh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!----------Navigace---------->
+  <div class="nav hide-on-small-only">
+    <div class="left white-text">
+      <div href="#main" class="btn-flat small white-text logo"> <a href="#main" class="btn-flat small white-text logo"> vodacilouny.ovh</a></div>
+    </div>
+    <div class="nav-buttons right">
+      <a href="#novinky" class="waves-effect waves-light btn-flat small white-text">novinky</a>
+      <a href="#" class="waves-effect waves-light btn-flat small white-text">tlačítko 2</a>
+      <a href="#galerie" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
+    </div>
+  </div>
+
+  <!----------Header---------->
+  <div class="header" id="main">
+    <div class="header-title"><h1 class="white-text">Vodáci Louny</h1></div>
+    <div class="start-button">
+      <a href="#content" class="waves-effect waves-light btn-flat small white-text start">Začínáme</a>
+    </div>
+    <div class="button">
+      <i class="fas fa-angle-double-down white-text"></i>
+    </div>
+  </div>
+
+  <!----------Content---------->
+  <div class="content" id="novinky">
+    <div class="container" id="content">
+
+      <div class="section">
+        <h1 class="center">Novinky</h1>
+        <div class="row">
+
+          <div class="col s12 l4">
+            <div class="card hoverable cyan lighten-4 z-depth-2">
+              <div class="card-image">
+                <img src="img/5.jpg" alt="">
+              </div>
+              <div class="card-content">
+                <div class="card-title">Jmenuje se bahňák!</div>
+                <p>Na poslední shůzce jsme pokřtili novou loď, a odhlasovali jsme jméno bahňák</p>
+              </div>
+              <div class="card-action">
+                <a href="#galerie-krest" class="black-text waves-effect waves-light btn cyan lighten-3">Podívejte se na fotky z křestu</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+    </div>
+  </div>
+
+   <!----------Kontakt---------->
+  <div class="contact white-text">
+    <h1 class="center">Co jsem dát?</h1>
+    <div class="row center">
+
+      <div class="col s6 section">
+        <h4>Nadpis něčeho</h4>
+        text něčeho
+      </div>
+
+      <div class="col s6 section">
+        <h4>Nadpis něčeho</h4>
+        <p>
+          Text něčeho
+        </p>
+      </div>
+
+      
+      <div class="col s12 section">
+        <h4>Nadpis pro tlačítko <i>(Není nutné aby bylo)</i></h4>
+        <a href="" class="btn-flat white-text waves-effect waves-light">Naše stránka</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!----------Content---------->
+  <div class="content flow-text" id="galerie">
+    <div class="container">
+      <h1 class="center">Galerie</h1>
+      
+      <div class="row">
+        
+        <div class="col s12 l12">
+          <h4 class="center">Podivuhodné zvířátko</h4>
+          <a href="img/1.jpg">
+            <img class="responsive-img hoverable z-depth-1" src="img/1.jpg">
+          </a>
+        </div>
+
+
+
+        <div class="col s12 l12" id="galerie-krest">
+          <h4 class="center">Křest bahňáka</h4>
+          <a href="img/2.jpg">
+            <img class="responsive-img hoverable z-depth-1" src="img/2.jpg">
+          </a>
+        </div>
+
+        <div class="col s12 l12">
+          <a href="img/3.jpg">
+            <img class="responsive-img hoverable z-depth-1" src="img/3.jpg">
+          </a>
+        </div>
+
+        <div class="col s12 l12">
+          <a href="img/4.jpg">
+            <img class="responsive-img hoverable z-depth-1" src="img/4.jpg">
+          </a>
+        </div>
+
+      </div>
+
+      </div>
+
     </div>
 
-    <div class="content">
-      <div class="nav"></div>
-      <div class="post">
-        <div class="post_title">
-          Lorem Lipsum
-        </div>
-        <div class="post_content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          doloribus odio quisquam eveniet illum, recusandae alias corporis,
-          delectus iusto officia nemo. Voluptatibus possimus voluptate enim
-          laboriosam cupiditate ea ullam libero. Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Quod eaque ratione aliquid, minima et
-          accusantium ipsum laborum sed, harum ullam natus. At dolor commodi
-          qui, eveniet consectetur et doloribus maiores! Pariatur quisquam magni
-          ipsa temporibus tempora maxime veritatis aperiam. Quisquam eos omnis
-          alias accusamus debitis accusantium doloribus ut maxime? Labore sequi
-          officia a facilis doloremque nemo error incidunt corrupti totam.
-          Doloremque consequatur voluptate explicabo eius cum, quia harum quis
-          earum, fugiat omnis cumque hic maiores iure adipisci ratione officia
-          provident facere suscipit obcaecati accusamus dolorem nostrum tempore
-          modi? Consequuntur, voluptatibus? Ab quae cum mollitia pariatur
-          repudiandae iure ea perferendis nemo debitis consequuntur commodi
-          beatae, autem corporis repellat, quidem ad, omnis et voluptas tempora!
-          Facere itaque molestias, necessitatibus consequatur voluptate sit!
-          Dolor iure dolorem nisi quibusdam, hic in suscipit esse. Amet possimus
-          placeat vitae provident nobis suscipit magni rem magnam ratione, fugit
-          ut laborum fuga voluptatum nostrum voluptate cupiditate, corrupti eum!
+    <!----------Footer---------->
+    <footer class="page-footer grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Vodáci Louny</h5>
+            <p class="grey-text text-lighten-4">Stránka vodních skautl z Loun. Najdete zde všechny události z našeho oddílu
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Odkazy na</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2020 vodacilouny.ovh
+        <div class="right">Stránku vytvořil <i>Zmizík</i></div>
+        </div>
+      </div>
+    </footer>
 
-    <!--Scripts-->
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
 
-      var header = document.getElementById('header');
-      var header_title = document.getElementById('header_title');
-      var sticky = header.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          header.classList.add('sticky');
-          header_title.classList.add('opacity');
-        } else {
-          header.classList.remove('sticky');
-          header_title.classList.remove('opacity');
-        }
-      }
-    </script>
-    <!--
-    <script>
-      window.onscroll = function () {
-        myFunction2();
-      };
-
-      var navbar2 = document.getElementById('header_title');
-      var opacity = navbar.offsetTop;
-
-      function myFunction2() {
-        if (window.pageYOffset >= opacity) {
-          navbar2.classList.add('opacity');
-        } else {
-          navbar2.classList.remove('opacity');
-        }
-      }
-    </script>
-  --></body>
+  <script src="main.js"></script>
+</body>
 </html>
