@@ -12,13 +12,14 @@
 <body>
 
 <!----------Navigace---------->
-  <div class="nav hide-on-small-only">
+  <div class="nav hide-on-small-only" id="nav">
     <div class="left white-text">
       <div href="#main" class="btn-flat small white-text logo"> <a href="#main" class="btn-flat small white-text logo"> vodacilouny.ovh</a></div>
     </div>
     <div class="nav-buttons right">
       <a href="#novinky" class="waves-effect waves-light btn-flat small white-text">novinky</a>
-      <a href="#" class="waves-effect waves-light btn-flat small white-text">tlačítko 2</a>
+      <a href="#contact" class="waves-effect waves-light btn-flat small white-text">Kontakt</a>
+      <a href="#harmonogram" class="waves-effect waves-light btn-flat small white-text">Harmonogram</a>
       <a href="#galerie" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
     </div>
   </div>
@@ -63,33 +64,105 @@
     </div>
   </div>
 
-   <!----------Kontakt---------->
-  <div class="contact white-text">
-    <h1 class="center">Co jsem dát?</h1>
+   <!----------Info/Kontakt---------->
+  <div class="contact white-text" id="contact">
+    <h1 class="center">Kontakty</h1>
     <div class="row center">
 
-      <div class="col s6 section">
-        <h4>Nadpis něčeho</h4>
-        text něčeho
+      <div class="col s12 l6 section">
+        <h4>Jaroslav Kohoutek</h4>
+        <i>Vedoucí střediska</i>
+        <p>
+          GSM 724 412 741 <br>
+          <a href="mailto:jara.kohoutek@seznam.cz" class="btn-flat white-text waves-effect waves-light">jara.kohoutek@seznam.cz</a>
+        </p>
       </div>
 
-      <div class="col s6 section">
-        <h4>Nadpis něčeho</h4>
+      <div class="col s12 l6 section">
+        <h4>František Pospíšil</h4>
         <p>
-          Text něčeho
+          <i>Vedoucí oddílu</i>
+          <p>GSM 777 000 344 <br>
+            <a href="mailto:pospisil@stavumlouny.cz" class="btn-flat white-text waves-effect waves-light">pospisil@stavumlouny.cz</a>
+          </p>
         </p>
       </div>
 
       
-      <div class="col s12 section">
-        <h4>Nadpis pro tlačítko <i>(Není nutné aby bylo)</i></h4>
-        <a href="" class="btn-flat white-text waves-effect waves-light">Naše stránka</a>
+      <div class="col s12 l6 section">
+        <h4>Kde nás najdete?</h4>
+        <p><b>Junák – český skaut, z. s., středisko Louny </b><br>
+
+          5. oddíl vodních skautů – Kon-tiki <br>
+          
+          Loděnice s klubovnou – Masarykovy sady 2646, 440 01 Louny <br>
+          
+          kontaktní adresa – František Pospíšil, Masarykovy sady 1747, 440 01 Louny</p>
+      </div>
+
+      <div class="col s12 l6 section">
+        <h4>Kdy se můžeme setkat?</h4>
+        <p><b>Každou středu od 16:00 do 18:00 ve skautské loděnici</b><br>
+      </div>
+
+      <div class="col s12">
+        <iframe style="border:none" src="https://en.frame.mapy.cz/s/hacofedula" width="400" height="280" frameborder="0"></iframe>
       </div>
 
     </div>
   </div>
 
-  <!----------Content---------->
+
+  <div class="content harmonogram" id="harmonogram">
+    <div class="container">
+      <h1 class="center">Harmonogram</h1>
+    <table class="responsive-table">
+      <thead>
+        <tr>
+            <th>Termín</th>
+            <th>Popis Akce</th>
+            <th>Místo konání</th>
+            <th>Určeno pro</th>
+            <th>Garant</th>
+            <th>Pořadatek</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr class="hoverable">
+          <td>13.5</td>
+          <td>Květinový den</td>
+          <td>Louny</td>
+          <td>všichni</td>
+          <td>Duli</td>
+          <td>Středisko Louny</td>
+        </tr>
+
+        <tr class="hoverable">
+          <td>15 - 17.5</td>
+          <td>Návšteva Zschopau</td>
+          <td>Louny, Bašta</td>
+          <td>přihlášeni</td>
+          <td>Láby, Bačky</td>
+          <td>1.DO, R+R</td>
+        </tr>
+
+        <tr class="hoverable">
+          <td>28.6 - 11.7</td>
+          <td>Letní tábor</td>
+          <td>Hamr na jezeře</td>
+          <td>Přihlášeni</td>
+          <td>Čiko</td>
+          <td>středisko Louny</td>
+        </tr>
+
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!----------Content/Galerie---------->
   <div class="content flow-text" id="galerie">
     <div class="container">
       <h1 class="center">Galerie</h1>
@@ -142,10 +215,10 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Odkazy na</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.skaut.cz">Skautský rozcestník</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních skautů</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého kraje</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://skauti-louny.hranostaj.cz/">Stránky střediska</a></li>
             </ul>
           </div>
         </div>
@@ -159,6 +232,5 @@
     </footer>
 
 
-  <script src="main.js"></script>
 </body>
 </html>

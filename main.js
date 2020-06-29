@@ -1,4 +1,13 @@
-function openImage(){
-  var img = document.getElementById('open-image');
-  img.style.heigh = 240px;
+window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById('nav')
+var sticky = navbar.offsetTop;
+
+function stickyNav{
+  if (window-pageYOffset >= sticky) {
+    navbar.classList.add('sticky')
+  }
+  else{
+    navbar.classList.remove('sticky')
+  }
 }
