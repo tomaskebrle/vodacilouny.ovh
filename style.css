@@ -12,6 +12,8 @@ body{
   background-size: cover;
   display: flex;
   min-height: 100vh;
+  min-width: 100%;
+  max-width: 100%;
   flex-direction: column;
 }
 
@@ -105,6 +107,33 @@ body{
   color:#2e7d32;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.sidenav-btn{
+  padding: 18px;
+  color: #b2ebf2;
+}
+
+/*Harmonogram*/
+#harmonogram{
+  padding-bottom: 24px !important;
+}
+
+/*!Galerie*/
+
+.materialboxed{
+  padding-bottom: 16px;
+}
+.sidebar{
+  top: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#galerie img{
+  padding: 20px;
+  min-height: 150px;
+}
+
+.gallery-image{
+  max-height: 350px;
+  overflow: hidden;
 }

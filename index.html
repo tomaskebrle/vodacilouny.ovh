@@ -12,17 +12,25 @@
 <body>
 
 <!----------Navigace---------->
-  <div class="nav hide-on-small-only" id="nav">
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger not-link right hide-on-med-and-up sidenav-btn circle"> <i class="fas fa-bars"> 
+  </i></a>
+  <div class="nav hide-on-med-and-down" id="nav">
     <div class="left white-text">
       <div href="#main" class="btn-flat small white-text logo"> <a href="#main" class="btn-flat small white-text logo"> vodacilouny.ovh</a></div>
     </div>
-    <div class="nav-buttons right">
+    <div class="nav-buttons right hide-on-med-and-down">
       <a href="#novinky" class="waves-effect waves-light btn-flat small white-text">novinky</a>
       <a href="#contact" class="waves-effect waves-light btn-flat small white-text">Kontakt</a>
       <a href="#harmonogram" class="waves-effect waves-light btn-flat small white-text">Harmonogram</a>
-      <a href="#galerie" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
+      <a href="galerie.html" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
+      <a href="znalosti.html" class="waves-effect waves-light btn-flat small white-text">Znalosti</a>
     </div>
   </div>
+
+
+  <ul class="sidenav" id="mobile-demo">
+
+  </ul>
 
   <!----------Header---------->
   <div class="header" id="main">
@@ -162,54 +170,13 @@
     </div>
   </div>
 
-  <!----------Content/Galerie---------->
-  <div class="content flow-text" id="galerie">
-    <div class="container">
-      <h1 class="center">Galerie</h1>
-      
-      <div class="row">
-        
-        <div class="col s12 l12">
-          <h4 class="center">Podivuhodné zvířátko</h4>
-          <a href="img/1.jpg">
-            <img class="responsive-img hoverable z-depth-1" src="img/1.jpg">
-          </a>
-        </div>
-
-
-
-        <div class="col s12 l12" id="galerie-krest">
-          <h4 class="center">Křest bahňáka</h4>
-          <a href="img/2.jpg">
-            <img class="responsive-img hoverable z-depth-1" src="img/2.jpg">
-          </a>
-        </div>
-
-        <div class="col s12 l12">
-          <a href="img/3.jpg">
-            <img class="responsive-img hoverable z-depth-1" src="img/3.jpg">
-          </a>
-        </div>
-
-        <div class="col s12 l12">
-          <a href="img/4.jpg">
-            <img class="responsive-img hoverable z-depth-1" src="img/4.jpg">
-          </a>
-        </div>
-
-      </div>
-
-      </div>
-
-    </div>
-
     <!----------Footer---------->
     <footer class="page-footer grey darken-2">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Vodáci Louny</h5>
-            <p class="grey-text text-lighten-4">Stránka vodních skautl z Loun. Najdete zde všechny události z našeho oddílu
+            <p class="grey-text text-lighten-4">Stránka vodních skautů z Loun. Najdete zde všechny události z našeho oddílu
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
@@ -231,6 +198,12 @@
       </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        });
+    </script>
 
 </body>
 </html>
