@@ -137,3 +137,11 @@ body{
   max-height: 350px;
   overflow: hidden;
 }
+
+.chip .fas{
+  padding-right: 4px;
+}
+
+li i{
+  padding-right: 4px;
+}
