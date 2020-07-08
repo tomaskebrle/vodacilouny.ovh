@@ -8,8 +8,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+<!-- Preloader -->
+  <div class="loader-wrapper valign-wrapper">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="center">Načítání...</h1>
+      </div>
+      <div class="col s12">
+        <div class="progress">
+            <div class="indeterminate center blue darken-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 <!----------Navigace---------->
   <a href="#" data-target="mobile-demo" class="sidenav-trigger not-link right hide-on-med-and-up sidenav-btn circle"> <i class="fas fa-bars"> 
@@ -215,6 +231,12 @@
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
         });
+    </script>
+
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
     </script>
 
 </body>
