@@ -9,6 +9,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- !Loader -->
+  <script>
+        $(document).ready(function(){
+        $('#menu').load('navbar.html');
+        $('#footer').load('footer.html');
+    });
+  </script>
 </head>
 <body>
 
@@ -26,21 +33,8 @@
     </div>
   </div>
 
-<!----------Navigace---------->
-  <a href="#" data-target="mobile-demo" class="sidenav-trigger not-link right hide-on-med-and-up sidenav-btn circle"> <i class="fas fa-bars"> 
-  </i></a>
-  <div class="nav hide-on-med-and-down" id="nav">
-    <div class="left white-text">
-      <div href="#main" class="btn-flat small white-text logo"> <a href="#main" class="btn-flat small white-text logo"> vodacilouny.ovh</a></div>
-    </div>
-    <div class="nav-buttons right hide-on-med-and-down">
-      <a href="index.html#novinky" class="waves-effect waves-light btn-flat small white-text">novinky</a>
-      <a href="index.html#contact" class="waves-effect waves-light btn-flat small white-text">Kontakt</a>
-      <a href="index.html#harmonogram" class="waves-effect waves-light btn-flat small white-text">Harmonogram</a>
-      <a href="galerie.html" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
-      <a href="znalosti.html" class="waves-effect waves-light btn-flat small white-text">Znalosti</a>
-    </div>
-  </div>
+  <div id="menu"></div>
+
 
 
   <ul class="sidenav" id="mobile-demo">
@@ -49,7 +43,8 @@
 
   <!----------Header---------->
   <div class="header" id="main">
-    <div class="header-title"><h1 class="white-text">Vodáci Louny</h1></div>
+    <img src="img/SKAUT_logo_bile_stit.svg" alt="">
+    <div class="header-title"><h1 class="white-text">Galerie</h1></div>
     <div class="start-button">
       <a href="#content" class="waves-effect waves-light btn-flat small white-text start">Začínáme</a>
     </div>
@@ -61,14 +56,12 @@
   <!----------Content---------->
   <div class="content" id="galerie">
     <div class="container" id="content">
-
         <h1 class="center">Galerie</h1>
-
         <div class="row">
-
             <div class="sidebar col s12 l2 left hide-on-med-and-down">
                 <ul>
                     <h5>Navigace</h5>
+                    <b>Rok 2020</b>
                     <li><a href="#bahnak">Křest Bahňáka</a></li>
                     <li><a href="#podivna-zviratka">Podivná Zvířatka</a></li>
                     <li><a href="#vlcacky-ctyrboj">Vlčácký Čtyřboj</a></li>
@@ -79,7 +72,6 @@
                     <li><a href="#vanocni-schuzka">Vánoční Schůzka</a></li>
                 </ul>    
             </div>
-
             <div class="sidebar-mobile col s12 left hide-on-med-and-up">
                 <ul>
                     <h5>Navigace</h5>
@@ -99,9 +91,9 @@
                 <div id="bahnak" class="col s12">
                     <h3 class="center">Křest Bahňáka</h3>
                     <div class="row">
-                            <img class="materialboxed col s12 l4" width="650px" src="img/bahnak/2.jpg">
-                            <img class="materialboxed col s12 l4" width="650px" src="img/bahnak/3.jpg">
-                            <img class="materialboxed col s12 l4" width="650px" src="img/bahnak/4.jpg">    
+                      <div class="gallery-image col s12 l4"><img class="materialboxed" width="650px" src="img/bahnak/2.jpg"></div>
+                      <div class="gallery-image col s12 l4"><img class="materialboxed" width="650px" src="img/bahnak/3.jpg"></div>
+                      <div class="gallery-image col s12 l4"><img class="materialboxed" width="650px" src="img/bahnak/4.jpg"></div>
                     </div>
                 </div>
 
@@ -123,7 +115,7 @@
                     <div class="row">
                         <div class="row">
                           <div class="row">
-                            <div class="gallery-image col s12 l4"><img class="materialboxed center" width="650px" src="img/vyprava-hledani/1.jpg"></div>
+                            <div class="gallery-image col s12 l4"><img class="materialboxed center" width="350px" src="img/vyprava-hledani/1.jpg"></div>
                             <div class="gallery-image col s12 l4"><img class="materialboxed center" width="650px" src="img/vyprava-hledani/2.jpg"></div>
                             <div class="gallery-image col s12 l4"><img class="materialboxed center" width="650px" src="img/vyprava-hledani/3.jpg"></div>
                             <div class="gallery-image col s12 l4"><img class="materialboxed center" width="650px" src="img/vyprava-hledani/4.jpg"></div>
@@ -190,33 +182,8 @@
 
     </div>
   </div>
-    <!----------Footer---------->
-    <footer class="page-footer grey darken-2">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Vodáci Louny</h5>
-            <p class="grey-text text-lighten-4">Stránka vodních skautů z Loun. Najdete zde všechny události z našeho oddílu
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Odkazy na</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://www.skaut.cz">Skautský rozcestník</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních skautů</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého kraje</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://skauti-louny.hranostaj.cz/">Stránky střediska</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2020 vodacilouny.ovh
-        <div class="right">Stránku vytvořil <i>Zmizík</i></div>
-        </div>
-      </div>
-    </footer>
+
+  <div id="footer"></div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

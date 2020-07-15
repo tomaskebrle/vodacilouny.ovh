@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vodáci Louny|vodacilouny.ovh</title>
+  <title>Vodní skauti Louny|vodacilouny.ovh</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('#menu').load('navbar.html');
+    $('#footer').load('footer.html');
+    });
+</script>
 </head>
 <body>
 <!-- Preloader -->
@@ -27,21 +33,7 @@
 
 
 
-<!----------Navigace---------->
-  <a href="#" data-target="mobile-demo" class="sidenav-trigger not-link right hide-on-med-and-up sidenav-btn circle"> <i class="fas fa-bars"> 
-  </i></a>
-  <div class="nav hide-on-med-and-down" id="nav">
-    <div class="left white-text">
-      <div href="#main" class="btn-flat small white-text logo"> <a href="#main" class="btn-flat small white-text logo"> vodacilouny.ovh</a></div>
-    </div>
-    <div class="nav-buttons right hide-on-med-and-down">
-      <a href="#novinky" class="waves-effect waves-light btn-flat small white-text">novinky</a>
-      <a href="#contact" class="waves-effect waves-light btn-flat small white-text">Kontakt</a>
-      <a href="#harmonogram" class="waves-effect waves-light btn-flat small white-text">Harmonogram</a>
-      <a href="galerie.html" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
-      <a href="znalosti.html" class="waves-effect waves-light btn-flat small white-text">Znalosti</a>
-    </div>
-  </div>
+<div id="menu"></div>
 
 
   <ul class="sidenav" id="mobile-demo">
@@ -50,7 +42,12 @@
 
   <!----------Header---------->
   <div class="header" id="main">
-    <div class="header-title"><h1 class="white-text">Vodáci Louny</h1></div>
+
+    <div class="center">
+      <img src="img/SKAUT_logo_bile_stit.svg" alt="">
+    </div>
+
+    <div class="header-title"><h1 class="white-text">Vodní skauti Louny</h1></div>
     <div class="start-button">
       <a href="#content" class="waves-effect waves-light btn-flat small white-text start">Začínáme</a>
     </div>
@@ -60,27 +57,58 @@
   </div>
 
   <!----------Content---------->
-  <div class="content" id="novinky">
+  <div class="content" id="oskautech">
     <div class="container" id="content">
 
-      <div class="section">
-        <h1 class="center">Novinky</h1>
         <div class="row">
-
-          <div class="col s12 l4">
-            <div class="card hoverable cyan lighten-4 z-depth-2">
-              <div class="card-image">
-                <img src="img/5.jpg" alt="">
+          <div class="col s12">
+            <h1 class="center underline underline--center underline--blue">Co je to skauting?</h1>
+              <div class="row">
+                <div class="col s12 l6">
+                  <b>Skauting je přílezitost</b>
+                  <p>
+                    Být členem týmu a najít si kamarády,
+                    prožívat život naplno, aktivně a zajímavě,
+                    pracovat na sobě, rozvíjet svoje kladné stránky a vlohy,
+                    pomáhat světu kolem sebe, lidem i přírodě,
+                    pledat smysl svého života, svou vlastní cestu,
+                  </p>
+                  <b>Co nabízí skauting rodičům</b>
+                  <p> 
+                  Děti tráví volný čas aktivně, v bezpečném prostředí a pod dozorem kvalifikovaných vedoucích,
+                  děti se naučí pracovat v týmu, být samostatné, utvořit si vlastní názor,
+                  děti se rozvíjí ve všech ohledech (komunikace, inteligence, vztahy...), skautský program není pouze jednostranný jako mnohé sportovní kroužky,
+                  děti jsou ve skautských oddílech vedeny ke kladným životním hodnotám – pravdomluvnost, kamarádství, fair play, tolerance, služba společnosti...,
+                  děti poznají nejen Českou republiku, ale mají možnost vycestovat do zahraničí, procvičit si cizí jazyky
+                  </p>
+                </div>
+                <div class="col s12 l6">
+                  <b>Co nabízí skauting dětem?</b>
+                  <p>
+                    Partu kamarádů i celoživotní přátelství,
+                    schůzky plné soutěží a her každý týden,
+                    bíkendové výpravy po celé republice i do zahraničí,
+                    prázdninové tábory a
+                    spolehlivou obranu proti nudě
+                  </p>
+                  <b>O skautingu</b>
+                  <p>
+                    Skautské hnutí působí v současnosti ve 216 zemích a teritoriích světa (skautské organizace neexistují pouze v Andoře, Číně, na Kubě, v Severní Koreji, Laosu a Barmě), má přes čtyřicet milionů členů a je tedy největší mezinárodní organizací pro děti a mládež
+                  </p>
+                  <p>
+                    Skauti a skautky na celém světě se hlásí ke stejným životním hodnotám. Smyslem skautingu je maximální rozvoj jednotlivce a jeho pozitivní působení ve světě. K tomu člověka vede skautská výchovná metoda, tedy systém výchovy a sebevýchovy vedoucí k upevňování charakteru, vytváření hodnotového systému, rozvoji dovedností a znalostí
+                  </p>
+                  <p>
+                    Skauting má za sebou sto let existence (1907 – 2007). Za svůj úspěch vděčí pružnému a originálnímu výchovnému systému, díky němuž může být stále atraktivní a zajímavý
+                  </p>
+                  <p>
+                    Skauting si dovedl a stále dovede získat mladé lidi na celém světě, je otevřený pro všechny lidi bez rozdílu věku, barvy pleti, pohlaví či náboženského vyznání. Dospělí a děti se ve skautském oddíle stávají partnery, vzájemně se od sebe učí a překonávají tak hranice věkové a generační. Díky všestrannosti skautského výchovného programu si zde každý může najít to, co je mu osobně nejbližší
+                  </p>
+                </div>
               </div>
-              <div class="card-content">
-                <div class="card-title">Jmenuje se bahňák!</div>
-                <p>Na poslední shůzce jsme pokřtili novou loď, a odhlasovali jsme jméno bahňák</p>
-              </div>
-              <div class="card-action">
-                <a href="#galerie-krest" class="black-text waves-effect waves-light btn cyan lighten-3">Podívejte se na fotky z křestu</a>
-              </div>
-            </div>
+            </p>
           </div>
+        </div>
 
         </div>
       </div>
@@ -94,15 +122,6 @@
     <div class="row center">
 
       <div class="col s12 l6 section">
-        <h4>Jaroslav Kohoutek</h4>
-        <i>Vedoucí střediska</i>
-        <p>
-          GSM 724 412 741 <br>
-          <a href="mailto:jara.kohoutek@seznam.cz" class="btn-flat white-text waves-effect waves-light">jara.kohoutek@seznam.cz</a>
-        </p>
-      </div>
-
-      <div class="col s12 l6 section">
         <h4>František Pospíšil</h4>
         <p>
           <i>Vedoucí oddílu</i>
@@ -112,8 +131,17 @@
         </p>
       </div>
 
-      
       <div class="col s12 l6 section">
+        <h4>Jaroslav Kohoutek</h4>
+        <i>Vedoucí střediska</i>
+        <p>
+          GSM 724 412 741 <br>
+          <a href="mailto:jara.kohoutek@seznam.cz" class="btn-flat white-text waves-effect waves-light">jara.kohoutek@seznam.cz</a>
+        </p>
+      </div>
+
+      <div class="row">
+      <div class="col s12 l12 section">
         <h4>Kde nás najdete?</h4>
         <p><b>Junák – český skaut, z. s., středisko Louny </b><br>
 
@@ -126,16 +154,44 @@
 
       <div class="col s12 l6 section">
         <h4>Kdy se můžeme setkat?</h4>
-        <p><b>Každou středu od 16:00 do 18:00 ve skautské loděnici</b><br>
+        <p><b>Každou středu od 16:00 do 18:00 ve skautské loděnici </b> <i>viz mapka</i> <br>
       </div>
 
-      <div class="col s12">
+      <div class="col s12 l6">
         <iframe style="border:none" src="https://en.frame.mapy.cz/s/hacofedula" width="400" height="280" frameborder="0"></iframe>
       </div>
+    </div>
 
     </div>
   </div>
 
+  <div class="content" id="novinky">
+    <div class="container" id="content">
+
+      <div class="section">
+        <h1 class="center">Novinky</h1>
+        <div class="row">
+
+          <div class="col s12 l4">
+            <div class="card hoverable cyan lighten-4 z-depth-2">
+              <div class="card-image">
+                <img src="img/bahnak.jpg" alt="">
+              </div>
+              <div class="card-content">
+                <div class="card-title">Jmenuje se bahňák!</div>
+                <p>Na poslední shůzce jsme pokřtili novou loď, a odhlasovali jsme jméno bahňák</p>
+              </div>
+              <div class="card-action">
+                <a href="galerie.html#bahnak" class="black-text">Podívejte se na fotky</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <div class="content harmonogram" id="harmonogram">
     <div class="container">
@@ -148,37 +204,20 @@
             <th>Místo konání</th>
             <th>Určeno pro</th>
             <th>Garant</th>
-            <th>Pořadatek</th>
+            <th>Pořadatel</th>
         </tr>
       </thead>
 
       <tbody>
 
         <tr class="hoverable">
-          <td>13.5</td>
-          <td>Květinový den</td>
-          <td>Louny</td>
-          <td>všichni</td>
-          <td>Duli</td>
-          <td>Středisko Louny</td>
-        </tr>
-
-        <tr class="hoverable">
-          <td>15 - 17.5</td>
-          <td>Návšteva Zschopau</td>
-          <td>Louny, Bašta</td>
-          <td>přihlášeni</td>
-          <td>Láby, Bačky</td>
-          <td>1.DO, R+R</td>
-        </tr>
-
-        <tr class="hoverable">
           <td>28.6 - 11.7</td>
           <td>Letní tábor</td>
           <td>Hamr na jezeře</td>
-          <td>Přihlášeni</td>
+          <td>Pro příhlašení</td>
           <td>Čiko</td>
-          <td>středisko Louny</td>
+
+
         </tr>
 
       </tbody>
@@ -186,45 +225,7 @@
     </div>
   </div>
 
-    <!----------Footer---------->
-    <footer class="page-footer grey darken-2">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Vodáci Louny</h5>
-            <p class="grey-text text-lighten-4">Stránka vodních skautů z Loun. Najdete zde všechny události z našeho oddílu
-            </p>
-          </div>
-
-          <div class="col l3 s12">
-            <h5 class="white-text">Odkazy na</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://www.skaut.cz">Skautský rozcestník</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních skautů</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého kraje</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://skauti-louny.hranostaj.cz/">Stránky střediska</a></li>
-            </ul>
-          </div>
-
-          <div class="col l3 s12">
-              <h5>​</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="index.html">Úvod</a></li>
-                <li><a class="grey-text text-lighten-3" href="index.html#harmonogram">Harmonogram</a></li>
-                <li><a class="grey-text text-lighten-3" href="galerie.html">Galerie</a></li>
-                <li><a class="grey-text text-lighten-3" href="znalosti.html">Znalosti</a></li>
-              </ul>
-          </div>
-
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2020 vodacilouny.ovh
-        <div class="right">Stránku vytvořil <i>Zmizík</i></div>
-        </div>
-      </div>
-    </footer>
+<div id="footer"></div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

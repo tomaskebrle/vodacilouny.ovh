@@ -9,6 +9,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('#menu').load('navbar.html');
+    $('#footer').load('footer.html');
+    });
+</script>
 </head>
 <body>
 
@@ -25,21 +31,7 @@
     </div>
   </div>
 
-<!----------Navigace---------->
-  <a href="#" data-target="mobile-demo" class="sidenav-trigger not-link right hide-on-med-and-up sidenav-btn circle"> <i class="fas fa-bars"> 
-  </i></a>
-  <div class="nav hide-on-med-and-down" id="nav">
-    <div class="left white-text">
-      <div href="#main" class="btn-flat small white-text logo"> <a href="#main" class="btn-flat small white-text logo"> vodacilouny.ovh</a></div>
-    </div>
-    <div class="nav-buttons right hide-on-med-and-down">
-      <a href="index.html#novinky" class="waves-effect waves-light btn-flat small white-text">novinky</a>
-      <a href="index.html#contact" class="waves-effect waves-light btn-flat small white-text">Kontakt</a>
-      <a href="index.html#harmonogram" class="waves-effect waves-light btn-flat small white-text">Harmonogram</a>
-      <a href="galerie.html" class="waves-effect waves-light btn-flat small white-text">Galerie</a>
-      <a href="znalosti.html" class="waves-effect waves-light btn-flat small white-text">Znalosti</a>
-    </div>
-  </div>
+<div id="menu"></div>
 
 
   <ul class="sidenav" id="mobile-demo">
@@ -69,41 +61,42 @@
 
                 <div class="card z-depth-0">
                     <h1>Kilometráž</h1>
-                    <a href="znalosti/kilometraz.pdf"><div class="chip red lighten-2 hoverable z-depth-1"><i class="fas fa-file-pdf"></i>kilometraz.pdf</div></a>
+                    <div class="gallery-image"><img class="materialboxed center" width="650px" src="znalosti/kilometraz-1.png"></div>
                 </div>    
 
                 <div class="card z-depth-0">
                     <h1>Loď a pádlo</h1>
-                    <a href="znalosti/lod-a-padlo.pdf"><div class="chip red lighten-2 hoverable z-depth-1"><i class="fas fa-file-pdf"></i>lod-a-padlo.pdf</div></a>
-                    <a href="znalosti/popis-lodi-a-padla.pdf"><div class="chip red lighten-2 hoverable z-depth-1"><i class="fas fa-file-pdf"></i>popis-lodi-a-padla.pdf</div></a>
+                    <div class="gallery-image"><img class="materialboxed center" width="650px" src="znalosti/popis-lodi-a-padla.png"></div>
+                    <div class="gallery-image"><img class="materialboxed center" width="650px" src="znalosti/lod-a-padlo.png"></div>
                 </div>
 
                 <div class="card z-depth-0">
                     <h1>Stopy Zvířat</h1>
-                    <a href="znalosti/stopy-zvirat.pdf"><div class="chip red lighten-2 hoverable z-depth-1"><i class="fas fa-file-pdf"></i>stopy-zvirat.pdf</div></a>
+                    <div class="gallery-image"><img class="materialboxed center" width="650px" src="znalosti/stopy-zvirat.png"></div>
                 </div>
 
                 <div class="card-z-depth-0">
                     <h1>Uzly</h1>
-                    <a href="znalosti/uzly.pdf"><div class="chip red lighten-2 hoverable z-depth-1"><i class="fas fa-file-pdf"></i>uzly.pdf</div></a>
+                    <div class="gallery-image"><img class="materialboxed center" width="650px" src="znalosti/uzly.png"></div>
                 </div>
 
                 <div class="card z-depth-0">
                     <h1>Zákon,heslo,slib vlčat</h1>
 
-                    <p>
                         <b>Zákon</b> <br>
+                    <p>
                         Vlče se nikdy nepoddá samo sobě,
                         vlče se vždy poddá starému vlku.
                     </p>
 
-                    <p>
+                    
                         <b>Heslo vlčat</b> <br>
+                    <p>
                         Naší snahou nejlepší buď čin!
                     </p>
-
-                    <p>
+                    
                         <b>Slib</b> <br>
+                    <p>   
                         Slibuji, že se vynasnažím být poslušným vlčetem své smečky,
                         se kterou budu hledat nejvyšší Pravdu a Lásku, 
                         že každý den vykonám dobry skutek. <br>
@@ -174,45 +167,8 @@
         </div>
 
     </div>
-    <!----------Footer---------->
-    <footer class="page-footer grey darken-2">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Vodáci Louny</h5>
-            <p class="grey-text text-lighten-4">Stránka vodních skautů z Loun. Najdete zde všechny události z našeho oddílu
-            </p>
-          </div>
 
-          <div class="col l3 s12">
-            <h5 class="white-text">Odkazy na</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://www.skaut.cz">Skautský rozcestník</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních skautů</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého kraje</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://skauti-louny.hranostaj.cz/">Stránky střediska</a></li>
-            </ul>
-          </div>
-
-          <div class="col l3 s12">
-              <h5>​</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="index.html">Úvod</a></li>
-                <li><a class="grey-text text-lighten-3" href="index.html#harmonogram">Harmonogram</a></li>
-                <li><a class="grey-text text-lighten-3" href="galerie.html">Galerie</a></li>
-                <li><a class="grey-text text-lighten-3" href="znalosti.html">Znalosti</a></li>
-              </ul>
-          </div>
-
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2020 vodacilouny.ovh
-        <div class="right">Stránku vytvořil <i>Zmizík</i></div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer"></div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
