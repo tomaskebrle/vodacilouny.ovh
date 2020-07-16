@@ -122,6 +122,21 @@ h3{
   font-size: 3em;
 }
 
+#faq b{
+  font-family: skautbold, sans-serif;
+}
+
+/*!Drawing*/
+#co-je-skauting .drawing{
+  z-index: 0;
+  width: 70%;
+}
+
+
+.skautbold{
+  font-family: skautbold, sans-serif;
+}
+
 .nav{
   padding: 10px;
   height: 5vh;

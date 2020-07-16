@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vodní skauti Louny|vodacilouny.ovh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('#menu').load('navbar.html');
+    $('#footer').load('footer.html');
+    });
+</script>
+</head>
+<body>
+<!-- Preloader -->
+  <div class="loader-wrapper valign-wrapper">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="center">Načítání...</h1>
+      </div>
+      <div class="col s12">
+        <div class="progress">
+            <div class="indeterminate center blue darken-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div id="menu"></div>
+
+
+<!-- !Sidenav navigace -->
+
+<ul id="slide-out" class="sidenav">
+  <li>
+    <a href="index.html#co-je-skauting">Co je to skauting?</a>
+  </li>
+  <li>
+    <a href="index.html#contact">Kontakt</a>
+  </li>
+  <li>
+    <a href="index.html#faq">F.A.Q</a>
+  </li>
+  <li>
+    <a href="aktuality.html">Aktuality</a>
+  </li>
+  <li>
+    <a href="galerie.html">Galerie</a>
+  </li>
+  <li>
+    <a href="znalosti.html">Znalosti</a>
+  </li>
+</ul>
+
+
+<div class="hide-on-med-and-up">
+  <div class="left white-text">
+    <a href="#" data-target="slide-out" class="sidenav-trigger btn hide-on-med-and-up transparent z-depth-0"><i class="fas fa-bars"></i></a>
+  </div>
+  <div class="center white-text">
+    <div class="skautbold">
+      <h6>VODNÍ SKAUTI LOUNY</h6>
+    </div>
+  </div>
+</div>
+
+  <!----------Header---------->
+  <div class="header" id="main">
+
+    <div class="center">
+      <img src="img/SKAUT_logo_bile_stit.svg" alt="">
+    </div>
+
+    <div class="header-title"><h1 class="white-text">Vodní skauti Louny</h1></div>
+    <div class="start-button">
+      <a href="#content" class="waves-effect waves-light btn-flat small white-text start">Začínáme</a>
+    </div>
+    <div class="button">
+      <i class="fas fa-angle-double-down white-text"></i>
+    </div>
+  </div>
+
+
+
+  <div class="content" id="novinky">
+    <div class="container" id="content">
+
+      <div class="section">
+        <h1 class="center">Novinky</h1>
+        <div class="row">
+
+          <div class="col s12 l4">
+            <div class="card hoverable cyan lighten-4 z-depth-2">
+              <div class="card-image">
+                <img src="img/bahnak.jpg" alt="">
+              </div>
+              <div class="card-content">
+                <div class="card-title">Jmenuje se bahňák!</div>
+                <p>Na poslední shůzce jsme pokřtili novou loď, a odhlasovali jsme jméno bahňák</p>
+              </div>
+              <div class="card-action">
+                <a href="galerie.html#bahnak" class="black-text">Podívejte se na fotky</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="content harmonogram" id="harmonogram">
+    <div class="container">
+      <h1 class="center">Harmonogram</h1>
+    <table class="responsive-table">
+      <thead>
+        <tr>
+            <th>Termín</th>
+            <th>Popis Akce</th>
+            <th>Místo konání</th>
+            <th>Určeno pro</th>
+            <th>Garant</th>
+            <th>Pořadatel</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr class="hoverable">
+          <td>28.6 - 11.7</td>
+          <td>Letní tábor</td>
+          <td>Hamr na jezeře</td>
+          <td>Pro příhlašení</td>
+          <td>Čiko</td>
+
+
+        </tr>
+
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+
+
+<div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        });
+    </script>
+
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+
+</body>
+</html>
