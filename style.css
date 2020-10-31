@@ -155,23 +155,38 @@ h3{
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/*Big Header*/
+.big_header{
+  padding: 25vh 0;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.big_header img{
+  width: 20%;
+}
+
+/*Header*/
+
 .header{
   padding: 25vh 0;
   text-align: center;
   align-items: center;
-  height: 80vh;
+  height: 10vh;
 }
 
-.header img{
-  width: 10%;
+.big_header img{
+  width: 20%;
 }
 
-.header-title h2{
+
+.header-title, .big_header h2{
   text-align: center;
   font-weight: bold;
 }
 
-.header .button i{
+.big_header .button i{
   font-size: 2em;
   animation-name: bounce;
   animation-duration: 1.5s;
@@ -282,3 +297,4 @@ li i{
   background-color: #0d47a1;
   z-index: 99999;
 }
+
