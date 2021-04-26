@@ -1,138 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vodní skauti Louny|vodacilouny.ovh</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/29ece32e74.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('#menu').load('navbar.html');
+				$('#footer').load('footer.html');
+			});
+		</script>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vodní skauti Louny|vodacilouny.ovh</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#menu').load('navbar.html');
-      $('#footer').load('footer.html');
-    });
-  </script>
-</head>
+	<body>
+		<div id="menu"></div>
 
-<body>
+		<!-- !Sidenav navigace -->
 
+		<ul id="slide-out" class="sidenav">
+			<li>
+				<a href="index.html#co-je-skauting">Co je to skauting?</a>
+			</li>
+			<li>
+				<a href="index.html#contact">Kontakt</a>
+			</li>
+			<li>
+				<a href="index.html#faq">F.A.Q</a>
+			</li>
+			<li>
+				<a href="aktuality.html">Aktuality</a>
+			</li>
+			<li>
+				<a href="galerie.html">Galerie</a>
+			</li>
+			<li>
+				<a href="znalosti.html">Znalosti</a>
+			</li>
+		</ul>
 
+		<div class="hide-on-med-and-up">
+			<div class="left white-text">
+				<a
+					href="#"
+					data-target="slide-out"
+					class="sidenav-trigger btn hide-on-med-and-up transparent z-depth-0"
+					><i class="fas fa-bars"></i
+				></a>
+			</div>
+			<div class="center white-text">
+				<div class="skautbold">
+					<h6>VODNÍ SKAUTI LOUNY</h6>
+				</div>
+			</div>
+		</div>
 
+		<!----------Header---------->
+		<div class="header" id="main">
+			<div class="header-title">
+				<h2 class="white-text">Vodní skauti Louny</h2>
+			</div>
+		</div>
 
-  <div id="menu"></div>
+		<div class="content" id="novinky">
+			<div class="container" id="content">
+				<div class="section">
+					<h1 class="center">Novinky</h1>
+					<div class="row">
+						<div class="col s12 l6">
+							<div class="card hoverable cyan lighten-4 z-depth-2">
+								<div class="card-content">
+									<div class="card-title">Skautská detektivní agentura 2</div>
+									<div class="card-date">26/04/2021</div>
+									<p>Druhé zadání zadání pro skautskou detektivní agenturu</p>
+								</div>
+								<div class="card-action">
+									<a
+										href="../posts/skautska_detektivni_agentura_dva.html"
+										class="black-text"
+										>Klikni zde pro zadání</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 l6">
+							<div class="card hoverable cyan lighten-4 z-depth-2">
+								<div class="card-content">
+									<div class="card-title">Skautská detektivní agentura 1</div>
+									<div class="card-date">19/04/2021</div>
+									<p>První zadání pro skautskou detektivní agenturu</p>
+								</div>
+								<div class="card-action">
+									<a
+										href="../posts/skautska_detektivni_agentura_jedna.html"
+										class="black-text"
+										>Klikni zde pro zadání</a
+									>
+								</div>
+							</div>
+						</div>
 
+						<div class="col s12 l6">
+							<div class="card hoverable cyan lighten-4 z-depth-2">
+								<div class="card-image">
+									<img alt="" />
+								</div>
+								<div class="card-content">
+									<div class="card-title">"Domácí úkoly" pro vlčata</div>
+									<p>
+										Pár úkolů pro vlčata jelikož se nemužeme scházet na
+										schůzkách
+									</p>
+								</div>
+								<div class="card-action">
+									<a href="../posts/ukoly_pro_vlcata.html" class="black-text"
+										>Více informací zde</a
+									>
+								</div>
+							</div>
+						</div>
 
-  <!-- !Sidenav navigace -->
-
-  <ul id="slide-out" class="sidenav">
-    <li>
-      <a href="index.html#co-je-skauting">Co je to skauting?</a>
-    </li>
-    <li>
-      <a href="index.html#contact">Kontakt</a>
-    </li>
-    <li>
-      <a href="index.html#faq">F.A.Q</a>
-    </li>
-    <li>
-      <a href="aktuality.html">Aktuality</a>
-    </li>
-    <li>
-      <a href="galerie.html">Galerie</a>
-    </li>
-    <li>
-      <a href="znalosti.html">Znalosti</a>
-    </li>
-  </ul>
-
-
-  <div class="hide-on-med-and-up">
-    <div class="left white-text">
-      <a href="#" data-target="slide-out" class="sidenav-trigger btn hide-on-med-and-up transparent z-depth-0"><i
-          class="fas fa-bars"></i></a>
-    </div>
-    <div class="center white-text">
-      <div class="skautbold">
-        <h6>VODNÍ SKAUTI LOUNY</h6>
-      </div>
-    </div>
-  </div>
-
-  <!----------Header---------->
-  <div class="header" id="main">
-    <div class="header-title">
-      <h2 class="white-text">Vodní skauti Louny</h2>
-    </div>
-  </div>
-
-
-
-  <div class="content" id="novinky">
-    <div class="container" id="content">
-
-      <div class="section">
-        <h1 class="center">Novinky</h1>
-        <div class="row">
-
-          <div class="col s12 l6">
-            <div class="card hoverable cyan lighten-4 z-depth-2">
-              <div class="card-image">
-                <img alt="">
-              </div>
-              <div class="card-content">
-                <div class="card-title">Skautská detektivní agentura 1</div>
-                <p>
-                  První zadání pro skautskou detektivní agenturu
-                </p>
-              </div>
-              <div class="card-action">
-                <a href="../posts/skautska_detektivni_agentura_jedna.html" class="black-text">Klikni zde pro zadání</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 l6">
-            <div class="card hoverable cyan lighten-4 z-depth-2">
-              <div class="card-image">
-                <img alt="">
-              </div>
-              <div class="card-content">
-                <div class="card-title">"Domácí úkoly" pro vlčata</div>
-                <p>
-                  Pár úkolů pro vlčata jelikož se nemužeme scházet na schůzkách
-                </p>
-              </div>
-              <div class="card-action">
-                <a href="../posts/ukoly_pro_vlcata.html" class="black-text">Více informací zde</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 l12">
-            <div class="card hoverable cyan lighten-4 z-depth-2">
-              <div class="card-image">
-                <img src="img/bahnak.jpg" alt="">
-              </div>
-              <div class="card-content">
-                <div class="card-title">Jmenuje se bahňák!</div>
-                <p>Na poslední shůzce jsme pokřtili novou loď, a odhlasovali jsme jméno bahňák</p>
-              </div>
-              <div class="card-action">
-                <a href="galerie.html#bahnak" class="black-text">Podívejte se na fotky</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!--  
+						<div class="col s12 l6">
+							<div class="card hoverable cyan lighten-4 z-depth-2">
+								<div class="card-content">
+									<div class="card-title">Jmenuje se bahňák!</div>
+									<p>
+										Na poslední shůzce jsme pokřtili novou loď, a odhlasovali
+										jsme jméno bahňák
+									</p>
+								</div>
+								<div class="card-action">
+									<a href="galerie.html#bahnak" class="black-text"
+										>Podívejte se na fotky</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  
   <div class="content harmonogram" id="harmonogram">
     <div class="container">
       <h1 class="center">Harmonogram</h1>
@@ -156,22 +174,19 @@
   </div>
 -->
 
+		<div id="footer"></div>
 
-  <div id="footer"></div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('.sidenav');
+				var instances = M.Sidenav.init(elems);
+			});
+		</script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems);
-    });
-  </script>
-
-  <script>
-    $(window).on("load", function () {
-      $(".loader-wrapper").fadeOut("slow");
-    });
-  </script>
-
-</body>
-
+		<script>
+			$(window).on('load', function () {
+				$('.loader-wrapper').fadeOut('slow');
+			});
+		</script>
+	</body>
 </html>
