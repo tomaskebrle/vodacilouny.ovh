@@ -1,13 +1,11 @@
-window.onscroll = function() {stickyNav()};
-
-var navbar = document.getElementById('nav')
-var sticky = navbar.offsetTop;
-
-function stickyNav{
-  if (window-pageYOffset >= sticky) {
-    navbar.classList.add('sticky')
+var scrollVal = 100;
+$(window).scroll(function(){
+  var x = $(this).scrollTop();
+  if(x > scrollVal){
+    $("header").addClass("sticky");
+    console.log("sticky")
+  }else{
+    $("header").removeClass("sticky")
   }
-  else{
-    navbar.classList.remove('sticky')
-  }
-}
+  
+})

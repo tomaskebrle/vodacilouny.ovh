@@ -152,22 +152,21 @@ h3 {
 	padding: 10px;
 	height: 5vh;
 	width: 100%;
-	background-image: linear-gradient(
-		to bottom,
-		rgba(0, 0, 0, 0.7),
-		rgba(0, 0, 0, 0.01)
-	);
 	position: fixed;
 	z-index: 9999;
-}
-
-.sticky {
-	background-color: #000;
+	transition: 0.5s;
+	padding-top: 26px;
+	color: #fff !important;
 }
 
 .nav a:hover {
 	border-radius: 6px;
 	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav a{
+	color: #fff;
+	font-weight: bold;
 }
 
 /*Big Header*/
@@ -322,4 +321,19 @@ li i {
 
 section{
 	padding-bottom: 1rem;
+}
+
+.sticky{
+	background-color: #fff !important;
+	padding-top: 10px;
+	color: #000 !important;
+}
+
+.sticky a{
+	color:#000;
+	font-weight: bold;
+}
+
+.logo{
+	vertical-align: center;
 }

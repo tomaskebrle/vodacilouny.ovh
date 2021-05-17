@@ -165,7 +165,7 @@
     <h1 class="center">Kontakty</h1>
     <div class="row center">
 
-      <div class="col s12 l6 section">
+      <div class="col s12 l4 offset-l2 section">
         <h4>František Pospíšil</h4>
         <p>
           <i>Vedoucí oddílu</i>
@@ -176,7 +176,7 @@
         </p>
       </div>
 
-      <div class="col s12 l6 section">
+      <div class="col s12 l4 section">
         <h4>Jaroslav Kohoutek</h4>
         <i>Vedoucí střediska</i>
         <p>
@@ -347,9 +347,22 @@
   </script>
 
   <script>
+    // Loading animation
     $(window).on("load", function () {
       $(".loader-wrapper").fadeOut("slow");
     });
+    // Sticky navbar
+    var scrollVal = 100;
+    $(window).scroll(function () {
+      var x = $(this).scrollTop();
+      if (x > scrollVal) {
+        $(".nav").addClass("sticky");
+        console.log("sticky")
+      } else {
+        $(".nav").removeClass("sticky")
+      }
+
+    })
   </script>
 
 
