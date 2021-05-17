@@ -13,3 +13,18 @@
   </div>
 </div>
 
+
+<script>
+      // Sticky navbar
+      var scrollVal = 100;
+      $(window).scroll(function () {
+        var x = $(this).scrollTop();
+        if (x > scrollVal) {
+          $(".nav").addClass("sticky");
+          console.log("sticky")
+        } else {
+          $(".nav").removeClass("sticky")
+        }
+  
+      })
+</script>
