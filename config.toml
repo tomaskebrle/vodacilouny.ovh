@@ -1,0 +1,7 @@
+baseURL = "https://vodacilouny.ovh/"
+languageCode = "cz"
+title = "Vodáci Louny"
+paginate = 4
+
+[params]
+dateFormat = "2/1/2006"

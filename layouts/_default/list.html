@@ -1,0 +1,65 @@
+{{ define "main" }}
+<!--  
+<section class="post-list">
+	{{ range .Paginator.Pages }}
+	<article class="single-post border-bottom pb-4">
+		<h2 class="entry-title mt-4 mb-4">
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</h2>
+		<div class="post-meta mb-4">
+			<span class="post-author">Posted by: {{ .Params.author }}</span>
+			<span class="post-date">
+				<time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+			</span>
+			<span class="post-tags">
+				{{ range (.GetTerms "tags") }}
+				<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+				{{ end }}
+			</span>
+		</div>
+		<div class="entry-content">{{ .Summary }}</div>
+	</article>
+	{{ end }}
+	<div class="pt-4">{{ template "_internal/pagination.html" . }}</div>
+</section>
+-->
+<div class="content" id="novinky">
+	<div class="container" id="content">
+		<section class="section">
+			<h1 class="center py-10">Příspěvky</h1>
+				<div class="row">
+				{{ range .Paginator.Pages }}
+				
+				<div class="col s12 l6 hx-12">
+					<div class="card hoverable cyan lighten-4 z-depth-2">
+						<div class="card-content">
+							<div class="card-title">{{.Title}}</div>
+							<div class="card-date mb-2">
+								{{ dateFormat .Site.Params.dateFormat .Date }}
+							</div>
+							<div class="tags text-s text-grey-200">
+								{{ range (.GetTerms "tags") }}
+								<a href="{{ .Permalink }}" class="chip cyan lighten-3 hoverable"
+									>{{ .LinkTitle }}</a
+								>
+								{{end}}
+							</div>
+
+							<p>{{.Summary}}</p>
+						</div>
+						<div class="card-action">
+							<a href="{{.Permalink}}" class="black-text"
+								>Klikni zde pro více informací</a
+							>
+						</div>
+					</div>
+				</div>
+				{{end}}
+			</div>
+		</section>
+		<div class="p-4 py-8 cente">
+			{{ template "_internal/pagination.html" . }}
+		</div>
+	</div>
+</div>
+{{ end }}
