@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,18 @@
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1BRQQ4GR3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-K1BRQQ4GR3');
+  </script>
   <base href="/">
 </head>
 
@@ -84,11 +96,14 @@
           <h5 class="white-text">Užitečné odkazy</h5>
           <ul>
             <li><a class="grey-text underline text-lighten-1" href="https://www.skaut.cz">Skautský rozcestník</a></li>
-            <li><a class="grey-text underline text-lighten-1" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních skautů</a>
+            <li><a class="grey-text underline text-lighten-1" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních
+                skautů</a>
             </li>
-            <li><a class="grey-text underline text-lighten-1" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého kraje</a>
+            <li><a class="grey-text underline text-lighten-1" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého
+                kraje</a>
             </li>
-            <li><a class="grey-text underline text-lighten-1" href="https://skauti-louny.hranostaj.cz/">Stránky střediska</a></li>
+            <li><a class="grey-text underline text-lighten-1" href="https://skauti-louny.hranostaj.cz/">Stránky
+                střediska</a></li>
           </ul>
         </div>
         <div class="col l6 s12">
@@ -100,8 +115,7 @@
               {{.Summary}}
 
               <br><br>
-              <a href="{{.Permalink}}"
-                class="waves-effect waves-light btn grey darken-4">
+              <a href="{{.Permalink}}" class="waves-effect waves-light btn grey darken-4">
                 přejít na příspěvek
               </a>
             </div>

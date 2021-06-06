@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1BRQQ4GR3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-K1BRQQ4GR3');
+  </script>
 </head>
 
 <body>
@@ -90,11 +102,14 @@
           <h5 class="white-text">Užitečné odkazy</h5>
           <ul>
             <li><a class="grey-text underline text-lighten-1" href="https://www.skaut.cz">Skautský rozcestník</a></li>
-            <li><a class="grey-text underline text-lighten-1" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních skautů</a>
+            <li><a class="grey-text underline text-lighten-1" href="https://vodni.skauting.cz/">Hlavní kapitanát vodních
+                skautů</a>
             </li>
-            <li><a class="grey-text underline text-lighten-1" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého kraje</a>
+            <li><a class="grey-text underline text-lighten-1" href="https://premyslaorace.skauting.cz/">Skauti Ústeckého
+                kraje</a>
             </li>
-            <li><a class="grey-text underline text-lighten-1" href="https://skauti-louny.hranostaj.cz/">Stránky střediska</a></li>
+            <li><a class="grey-text underline text-lighten-1" href="https://skauti-louny.hranostaj.cz/">Stránky
+                střediska</a></li>
           </ul>
         </div>
         <div class="col l6 s12">
@@ -106,8 +121,7 @@
               {{.Summary}}
 
               <br><br>
-              <a href="{{.Permalink}}"
-                class="waves-effect waves-light btn grey darken-4">
+              <a href="{{.Permalink}}" class="waves-effect waves-light btn grey darken-4">
                 přejít na příspěvek
               </a>
             </div>
@@ -133,7 +147,8 @@
 
   <!-- !LOADING -->
   <script>
-    $(window).on("load", function () {WSH
+    $(window).on("load", function () {
+      WSH
       $(".loader-wrapper").fadeOut("slow");
     });
   </script>
