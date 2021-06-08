@@ -379,6 +379,11 @@ p a:hover{
 	text-decoration: underline;
 }
 
-p{
+p,ul{
 	margin-bottom: 0.75rem;
+}
+
+ul li{
+  list-style-type: "- " !important;
+  list-style-position: inside !important;
 }
