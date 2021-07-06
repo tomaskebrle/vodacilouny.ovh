@@ -6,5 +6,5 @@ tags = ["Hra pro Bačkyho"]
 +++
 Ahoj Bačky,
 přijď se podívat sem:
-`*50°41.62460'N, 14°51.76896'E*`
+*`50°41.62460'N, 14°51.76896'E`*
 
